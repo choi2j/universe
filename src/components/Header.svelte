@@ -1,0 +1,36 @@
+<script>
+	import logo from '../assets/universe_logo.svg';
+</script>
+
+<div id="header">
+	<img src={logo} alt="" />
+	<ul class="nav">
+		<li class="item"><a href=".">전시회 소개</a></li>
+		<li class="item"><a href=".">체험하기</a></li>
+		<li class="item"><a href=".">인증 카드 만들기</a></li>
+	</ul>
+</div>
+
+<style>
+	#header {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		padding: 0.5rem 12.5rem;
+		background: var(--dark);
+		position: absolute;
+		width: 100%;
+	}
+
+	#header .nav {
+		list-style-type: none;
+		display: flex;
+		gap: 3rem;
+		margin-left: auto;
+	}
+
+	#header .nav .item a {
+		color: var(--light);
+	}
+</style>

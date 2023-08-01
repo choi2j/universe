@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'SUIT';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT.woff2') format('woff2');
+}
+
+:root {
+    --light: #d3d3d3;
+    --dark: #00000033;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'SUIT';
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
