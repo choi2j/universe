@@ -1,13 +1,39 @@
 <script>
-	import src from '../assets/universe_video.mp4';
+	import src from '../assets/neu_universum.mp4';
 	import arrow from '../assets/arrow.svg';
+	import audioOn from '../assets/audioOn.svg';
+	import audioOff from '../assets/audioOff.svg';
+	let audio = false;
+	/**
+	 */
+	function toggleAudio() {
+		if (audio) {
+			// @ts-ignore
+			document.querySelector('#mainVideo').muted = true;
+			// @ts-ignore
+			document.querySelector('#buttonImg').src = audioOff;
+			console.log(`off, ${audio}`);
+			
+		} else {
+			// @ts-ignore
+			document.querySelector('#mainVideo').muted = false;
+			// @ts-ignore
+			document.querySelector('#buttonImg').src = audioOn;
+			console.log(`on, ${audio}`);
+		}
+		audio = !audio;
+	}
 </script>
 
 <div id="landing">
-	<video preload="auto" autoplay>
+	<video id="mainVideo" preload="auto" autoplay muted>
 		<track kind="captions" />
 		<source {src} type="video/mp4" />
 	</video>
+
+	<button type="button" on:click={() => toggleAudio()}>
+		<img id="buttonImg" src={audioOff} alt=""/>
+	</button>
 
 	<a class="arrow" href="/home">
 		<img src={arrow} alt="" />
@@ -35,5 +61,13 @@
 
 	.arrow:hover {
 		bottom: 1rem;
+	}
+
+	button {
+		position: fixed;
+		top: 4rem;
+		right: 2rem;
+		background-color: rgba(0, 0, 0, 0);
+		border: none;
 	}
 </style>

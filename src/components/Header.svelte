@@ -3,11 +3,13 @@
 </script>
 
 <div id="header">
+	<!-- a href="/" -->
 	<img src={logo} alt="" />
+	<!-- /a -->
 	<ul class="nav">
 		<li class="item"><a href=".">전시회 소개</a></li>
 		<li class="item"><a href=".">체험하기</a></li>
-		<li class="item"><a href=".">인증 카드 만들기</a></li>
+		<li class="item"><a href="/card">인증 카드 만들기</a></li>
 	</ul>
 </div>
 
