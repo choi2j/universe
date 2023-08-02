@@ -1,9 +1,15 @@
 <script>
+<<<<<<< HEAD
 	import text from '../../assets/myIDCardText.svg';
 	import card from '../../assets/IDCardSample.svg';
+=======
+    import text from '../../assets/card/myIDCardText.svg';
+    import card from '../../assets/card/IDCardSample.svg';
+>>>>>>> 08cb9e70cf2b4f38008335e3beedf17769a47902
 </script>
 
 <div id="card">
+<<<<<<< HEAD
 	<img id="text" src={text} alt="" />
 	<img id="sample" src={card} alt="" />
 	<div class="btn">
@@ -11,6 +17,13 @@
 		<div class="btn-border" />
 		<div class="btn-text">인증 카드 받기</div>
 	</div>
+=======
+    <img id="text" src={text} alt="" />
+    <img id="sample" src={card} alt="" />
+    <div id="button">
+        <a href="/card/making">인증 카드 받기</a>
+    </div>
+>>>>>>> 08cb9e70cf2b4f38008335e3beedf17769a47902
 </div>
 
 <style>

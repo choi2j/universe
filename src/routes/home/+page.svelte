@@ -1,6 +1,6 @@
 <script>
-	import uni1 from '../../assets/universe_qwerty.png';
-	import uni2 from '../../assets/universe_moto.png';
+	import uni1 from '../../assets/home/universe_qwerty.png';
+	import uni2 from '../../assets/home/universe_moto.png';
     import arrow from "../../assets/arrow.svg";
 </script>
 
