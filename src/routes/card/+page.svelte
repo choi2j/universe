@@ -1,74 +1,72 @@
 <script>
-    import text from '../../assets/myIDCardText.svg';
-    import card from '../../assets/IDCardSample.svg';
+	import text from '../../assets/myIDCardText.svg';
+	import card from '../../assets/IDCardSample.svg';
 </script>
 
-
-
 <div id="card">
-    <img id="text" src={text} alt="" />
-    <img id="sample" src={card} alt="" />
-    <div id="button">인증 카드 받기</div>
+	<img id="text" src={text} alt="" />
+	<img id="sample" src={card} alt="" />
+	<div class="btn">
+		<div class="btn-bg" />
+		<div class="btn-border" />
+		<div class="btn-text">인증 카드 받기</div>
+	</div>
 </div>
 
-
 <style>
-    #card {
-        height: 100%;
+	#card {
+		height: 100%;
 		width: 100%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-    }
+	}
 
-    #text {
-        height: 125px;
-    }
+	#text {
+		height: 8rem;
+	}
 
-    #sample {
-        height: 600px;
-        margin-top: 64px;
-        margin-bottom: 32px;
-    }
+	#sample {
+		height: 600px;
+		margin-top: 4rem;
+		margin-bottom: 4rem;
+	}
 
-    #button {
+	.btn {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+	}
 
-        /* Auto layout */
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 18px 42px;
-        gap: 10px;
+	.btn-bg {
+		border-radius: 60rem;
+		grid-column: 1/2;
+		grid-row: 1/2;
+		z-index: 1;
+		background-color: #ffffff33;
+	}
 
-        position: absolute;
-        width: 250px;
-        height: 64px;
-        left: calc(50% - 244px/2);
-        top: 965.16px;
+	.btn-border {
+		grid-column: 1/2;
+		grid-row: 1/2;
+		z-index: 2;
+		border-radius: 60rem;
+		border: 3px solid transparent;
+		background: linear-gradient(-45deg, #8C8AFF, #DB74FF00, #DB74FF00, #DB74FF) border-box;
+		-webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+		-webkit-mask-composite: xor;
+		mask-composite: exclude;
+	}
 
-        background: rgba(255, 255, 255, 0.2);
-        backdrop-filter: blur(2px);
-
-        font-family: 'SUIT';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 28px;
-        line-height: 100%;
-
-        color: #FFFFFF;
-        border-radius: 999px;
-        border: 3px double transparent;
-        background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), 
-            linear-gradient(150deg, #DB74FF, rgba(0, 0, 0, 0), #8C8AFF);
-        background-origin: border-box;
-        background-clip: content-box, border-box;
-        /* Inside auto layout */
-        flex: none;
-        order: 0;
-        flex-grow: 0;
-    }
-
-    
+	.btn-text {
+		padding: 1rem 2.5rem;
+		grid-column: 1/2;
+		grid-row: 1/2;
+		white-space: nowrap;
+		color: white;
+		z-index: 2;
+		text-transform: uppercase;
+        font-size: 1.75rem;
+	}
 </style>
