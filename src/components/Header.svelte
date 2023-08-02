@@ -23,6 +23,7 @@
 		background: var(--dark);
 		position: absolute;
 		width: 100%;
+		z-index: 10;
 	}
 
 	#header .nav {
