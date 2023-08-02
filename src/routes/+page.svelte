@@ -62,6 +62,7 @@
 
 	.arrow:hover {
 		bottom: 1rem;
+		padding-top: 1rem;
 	}
 
 	button {
