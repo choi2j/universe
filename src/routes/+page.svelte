@@ -49,10 +49,7 @@
 	}
 
 	video {
-<<<<<<< HEAD
-=======
 		height: 100%;
->>>>>>> 08cb9e70cf2b4f38008335e3beedf17769a47902
 		width: 100%;
 		box-sizing: border-box;
 	}
