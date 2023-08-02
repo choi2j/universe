@@ -1,16 +1,16 @@
 <script>
-	import text from '../../assets/myIDCardText.svg';
-	import card from '../../assets/IDCardSample.svg';
+	import text from "$lib/assets/card/myIDCardText.svg";
+	import card from "$lib/assets/card/IDCardSample.svg";
 </script>
 
 <div id="card">
 	<img id="text" src={text} alt="" />
 	<img id="sample" src={card} alt="" />
-	<div class="btn">
+	<a href="card/making" class="btn">
 		<div class="btn-bg" />
 		<div class="btn-border" />
 		<div class="btn-text">인증 카드 받기</div>
-	</div>
+	</a>
 </div>
 
 <style>
@@ -53,7 +53,7 @@
 		z-index: 2;
 		border-radius: 60rem;
 		border: 3px solid transparent;
-		background: linear-gradient(-45deg, #8C8AFF, #DB74FF00, #DB74FF00, #DB74FF) border-box;
+		background: linear-gradient(-45deg, #8c8aff, #db74ff00, #db74ff00, #db74ff) border-box;
 		-webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
 		-webkit-mask-composite: xor;
 		mask-composite: exclude;
@@ -67,6 +67,6 @@
 		color: white;
 		z-index: 2;
 		text-transform: uppercase;
-        font-size: 1.75rem;
+		font-size: 1.75rem;
 	}
 </style>

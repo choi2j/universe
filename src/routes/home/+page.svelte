@@ -1,7 +1,7 @@
 <script>
-	import uni1 from '../../assets/home/universe_qwerty.png';
-	import uni2 from '../../assets/home/universe_moto.png';
-    import arrow from "../../assets/arrow.svg";
+	import uni1 from "$lib/assets/home/universe_qwerty.png";
+	import uni2 from "$lib/assets/home/universe_moto.png";
+    import arrow from "$lib/assets/arrow.svg";
 </script>
 
 <div id="home">

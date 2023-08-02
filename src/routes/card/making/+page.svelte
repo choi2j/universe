@@ -1,8 +1,8 @@
 <script>
-    import logo from '../../../assets/universe_logo.svg';
-    import barcode from '../../../assets/card/card_barcode.svg';
-    let name = '';
-    let job = '';
+    import logo from "$lib/assets/universe_logo.svg";
+    import barcode from "$lib/assets/card/card_barcode.svg";
+    let name = "";
+    let job = "";
 </script>
 
 <div id="makingCard">

@@ -1,11 +1,11 @@
 <script>
-    import leftArrow from '../../assets/leftarrow.svg';
-    import rightArrow from '../../assets/rightarrow.svg';
-    import planetA from '../../assets/project/planetA_1.svg';
-    import planetB from '../../assets/project/planetB_1.svg';
-    import planetC from '../../assets/project/planetC_1.svg';
-    import planetD from '../../assets/project/planetD_1.svg';
-    import planetE from '../../assets/project/planetE_1.svg';
+    import leftArrow from "$lib/assets/leftarrow.svg";
+    import rightArrow from "$lib/assets/rightarrow.svg";
+    import planetA from "$lib/assets/project/planetA_1.svg";
+    import planetB from "$lib/assets/project/planetB_1.svg";
+    import planetC from "$lib/assets/project/planetC_1.svg";
+    import planetD from "$lib/assets/project/planetD_1.svg";
+    import planetE from "$lib/assets/project/planetE_1.svg";
 </script>
 
 <div id="planet">

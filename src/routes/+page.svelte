@@ -1,24 +1,24 @@
 <script>
-	import src from '../assets/root/neu_universum.mp4';
-	import arrow from '../assets/arrow.svg';
-	import audioOn from '../assets/root/audioOn.svg';
-	import audioOff from '../assets/root/audioOff.svg';
+	import src from "$lib/assets/root/neu_universum.mp4";
+	import arrow from "$lib/assets/arrow.svg";
+	import audioOn from "$lib/assets/root/audioOn.svg";
+	import audioOff from "$lib/assets/root/audioOff.svg";
 	let audio = false;
 	/**
 	 */
 	function toggleAudio() {
 		if (audio) {
 			// @ts-ignore
-			document.querySelector('#mainVideo').muted = true;
+			document.querySelector("#mainVideo").muted = true;
 			// @ts-ignore
-			document.querySelector('#buttonImg').src = audioOff;
+			document.querySelector("#buttonImg").src = audioOff;
 			console.log(`off, ${audio}`);
 			
 		} else {
 			// @ts-ignore
-			document.querySelector('#mainVideo').muted = false;
+			document.querySelector("#mainVideo").muted = false;
 			// @ts-ignore
-			document.querySelector('#buttonImg').src = audioOn;
+			document.querySelector("#buttonImg").src = audioOn;
 			console.log(`on, ${audio}`);
 		}
 		audio = !audio;

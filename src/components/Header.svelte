@@ -1,5 +1,5 @@
 <script>
-	import logo from '../assets/universe_logo.svg';
+	import logo from "$lib/assets/universe_logo.svg";
 </script>
 
 <div id="header">
