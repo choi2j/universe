@@ -1,8 +1,8 @@
 <script>
-	import src from '../assets/neu_universum.mp4';
+	import src from '../assets/root/neu_universum.mp4';
 	import arrow from '../assets/arrow.svg';
-	import audioOn from '../assets/audioOn.svg';
-	import audioOff from '../assets/audioOff.svg';
+	import audioOn from '../assets/root/audioOn.svg';
+	import audioOff from '../assets/root/audioOff.svg';
 	let audio = false;
 	/**
 	 */
@@ -50,6 +50,7 @@
 
 	video {
 		height: 100%;
+		width: 100%;
 		box-sizing: border-box;
 	}
 

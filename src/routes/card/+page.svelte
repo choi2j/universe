@@ -1,6 +1,6 @@
 <script>
-    import text from '../../assets/myIDCardText.svg';
-    import card from '../../assets/IDCardSample.svg';
+    import text from '../../assets/card/myIDCardText.svg';
+    import card from '../../assets/card/IDCardSample.svg';
 </script>
 
 
@@ -8,7 +8,9 @@
 <div id="card">
     <img id="text" src={text} alt="" />
     <img id="sample" src={card} alt="" />
-    <div id="button">인증 카드 받기</div>
+    <div id="button">
+        <a href="/card/making">인증 카드 받기</a>
+    </div>
 </div>
 
 
