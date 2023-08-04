@@ -24,11 +24,19 @@
 	}
 
     .img1 {
+<<<<<<< HEAD
         height: 6rem;
     }
 
     .img2 {
         height: 15rem;
+=======
+        height: 7.25rem;
+    }
+
+    .img2 {
+        height: 14.3125rem;
+>>>>>>> 2a69165c1c8b290bf3850860b3b7ab3f2baca820
     }
 
     .arrow {

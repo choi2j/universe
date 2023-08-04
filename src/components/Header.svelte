@@ -3,9 +3,10 @@
 </script>
 
 <div id="header">
-	<!-- a href="/" -->
-	<img src={logo} alt="" />
-	<!-- /a -->
+	<a href="/">
+		<img src={logo} alt="" />
+	</a>
+	
 	<ul class="nav">
 		<li class="item"><a href="/home">전시회 소개</a></li>
 		<li class="item"><a href="/planet">체험하기</a></li>
