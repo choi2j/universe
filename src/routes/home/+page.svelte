@@ -24,11 +24,11 @@
 	}
 
     .img1 {
-        height: 10rem;
+        height: 6rem;
     }
 
     .img2 {
-        height: 20rem;
+        height: 15rem;
     }
 
     .arrow {
