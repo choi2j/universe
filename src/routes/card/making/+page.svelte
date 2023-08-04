@@ -224,29 +224,29 @@
 
 <style>
     #logo {
-        width: 227px;
+        width: 14rem;
     }
 
     #background {
-        width: 180px;
-        margin: 28px 0;
+        width: 11rem;
+        margin: 1.5rem 0;
     }
 
     #name {
-        font-size: 32px;
-        margin-bottom: 12px;
+        font-size: 2rem;
+        margin-bottom: 1rem;
         font-weight: 600;
     }
 
     #job {
-        font-size: 16px;
-        margin-bottom: 30px;
+        font-size: 1rem;
+        margin-bottom: 2rem;
         font-weight: 600;
     }
 
     #date {
-        font-size: 24px;
-        margin-top: 35px;
+        font-size: 1.5rem;
+        margin-top: 2rem;
     }
 
     div {
@@ -263,7 +263,7 @@
 		flex-direction: row;
 		align-items: center;
 		justify-content: center;
-        margin-bottom: 75px;
+        margin-bottom: 5rem;
     }
 
     #makingCard {
@@ -321,20 +321,20 @@
         /* Auto layout */
         /* display: flex; */
         justify-content: center;
-        gap: 10px;
+        gap: 1rem;
 
         position: relative;
-        width: 354px;
-        height: 560px;
+        width: 22rem;
+        height: 35rem;
 
         background: linear-gradient(159.12deg, rgba(137, 149, 255, 0.2) 3.62%, rgba(255, 255, 255, 0.002) 50.74%, rgba(200, 130, 255, 0.2) 97.86%);
         backdrop-filter: blur(6px);
         /* Note: backdrop-filter has minimal browser support */
-        border-radius: 32px;
+        border-radius: 2rem;
 	}
 
 	.card-bg {
-		border-radius: 32px;
+		border-radius: 2rem;
 		grid-column: 1/2;
 		grid-row: 1/2;
 		z-index: 1;
@@ -344,7 +344,7 @@
 		grid-column: 1/2;
 		grid-row: 1/2;
 		z-index: 2;
-		border-radius: 32px;
+		border-radius: 2rem;
 		border: 3px solid transparent;
 		background: linear-gradient(-45deg, #8c8aff, #db74ff00, #db74ff00, #db74ff) border-box;
 		-webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
@@ -367,35 +367,35 @@
 		align-items: center;
 		justify-content: center;
         position: relative;
-        width: 502px;
-        height: 560px;
+        width: 31rem;
+        height: 35rem;
 
         background: rgba(255, 255, 255, 0.2);
         backdrop-filter: blur(12px);
         /* Note: backdrop-filter has minimal browser support */
-        border-radius: 32px;
-        margin-left: 48px;
+        border-radius: 2rem;
+        margin-left: 3rem;
     }
 
     .inp {
-        width: 390px;
-        margin: 12px;
+        width: 22rem;
+        margin: 1rem;
     }
 
     .t12 {
-        font-size: 12px;
+        font-size: 0.8rem;
     }
 
     .t18 {
-        font-size: 18px;
+        font-size: 1.2rem;
     }
 
     input {
         width: 100%;
-        height: 42px;
+        height: 2.5rem;
         border: none;
-        border-radius: 8px;
-        padding: 14px;
+        border-radius: 0.5rem;
+        padding: 1rem;
     }
 
     #buttons {
@@ -406,17 +406,17 @@
     }
 
     #headToggle {
-        height: 52px;
-        width: 168px;
+        height: 3rem;
+        width: 10rem;
         display: grid;
 		grid-template-columns: 1fr;
 		grid-template-rows: auto;
         box-sizing: border-box;
-        margin: 0 32px;
+        margin: 0 2rem;
     }
 
     #headToggle-bg {
-        border-radius: 32px;
+        border-radius: 2rem;
 		grid-column: 1/2;
 		grid-row: 1/2;
 		z-index: 1;
@@ -431,7 +431,7 @@
         grid-column: 1/2;
 		grid-row: 1/2;
 		z-index: 2;
-		border-radius: 32px;
+		border-radius: 2rem;
 		border: 3px solid transparent;
 		background: linear-gradient(-45deg, #8c8aff, #db74ff00, #db74ff00, #db74ff) border-box;
 		-webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
@@ -441,20 +441,20 @@
     }
 
     .arrow {
-        height: 52px;
-        width: 52px;
+        height: 3rem;
+        width: 3rem;
     }
 
     .toggleButton {
-        width: 56px;
-        height: 34px;
-        border-radius: 999px;
-        font-size: 18px;
+        width: 3.5rem;
+        height: 2rem;
+        border-radius: 100rem;
+        font-size: 1.2rem;
         z-index: 1;
     }
 
     #temp8 {
-        width: 8px;
+        width: 0.5rem;
     }
 
     #head {
@@ -468,6 +468,6 @@
     }
 
     .inp-div {
-        margin-bottom: 12px;
+        margin-bottom: 0.8rem;
     }
 </style>
