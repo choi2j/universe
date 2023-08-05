@@ -70,8 +70,11 @@
 
     #temp1 {
         margin-bottom: 48px;
-        width: 800px;
-        height: 720px;
+        width: 824px;
+        height: 744px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 
     .temp2 {
@@ -82,7 +85,7 @@
         border-radius: 48px;
         color: white;
         padding: 46px 24px 0 24px;
-        display: inline-block;
+        margin: 12px;
     }
 
     .rule {
@@ -97,5 +100,9 @@
 
     #qwertyLogo {
         width: 116px;
+    }
+
+    #text {
+        display: none;
     }
 </style>
