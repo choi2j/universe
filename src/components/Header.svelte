@@ -8,7 +8,7 @@
 	</a>
 	
 	<ul class="nav">
-		<li class="item"><a href="/home">전시회 소개</a></li>
+		<li class="item"><a href="/intro">전시회 소개</a></li>
 		<li class="item"><a href="/planet">체험하기</a></li>
 		<li class="item"><a href="/card">인증 카드 만들기</a></li>
 	</ul>
