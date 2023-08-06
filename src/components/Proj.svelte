@@ -1,4 +1,6 @@
 <script>
+// @ts-nocheck
+
 	export let title;
 	export let desc;
 	export let src;
