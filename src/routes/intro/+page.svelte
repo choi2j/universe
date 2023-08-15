@@ -20,8 +20,8 @@
     <div id="temp1">
         <div class="temp2">
             <img src={iconA} alt="soundIcon">
-            <p class="rule">음악 들으면서 관람하기</p>
-            <p class="desc">실제로 우주를 탐험하는듯한 소리를 들으면서 유니버스를 관람해주세요.</p>
+            <p class="rule">웹사이트 구경하기</p>
+            <p class="desc">실제로 우주를 탐험하듯이 유니버스를 관람해주세요. 각 웹사이트마다 특별한 이벤트가 준비되어 있답니다.</p>
         </div>
         <div class="temp2">
             <img src={iconB} alt="rocketIcon">
@@ -100,9 +100,5 @@
 
     #qwertyLogo {
         width: 116px;
-    }
-
-    #text {
-        display: none;
     }
 </style>
