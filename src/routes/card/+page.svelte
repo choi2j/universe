@@ -9,21 +9,24 @@
 </script>
 
 <div id="card" style="background-image: url({bg4});">
-	<img id="text" src={text} alt="" />
-	<p id="text2">유니버스카드로 유니버스에서의 추억을 간직해주세요.</p>
-	<div id="sample" class="card">
-		<div class="card-bg">
-			<div class="card-inner">
-				<img id="logo" src={logo} alt="logo">
-				<img id="background" src={portrait} alt="face">
-				<div id="name">Kim Sunrin</div>
-				<div id="job">Developer</div>
-				<img id="barcode" src={barcode} alt="barcode">
-				<div id="date">2023.09.05</div>
+	<div class="inner">
+		<img id="text" src={text} alt="" />
+		<p id="text2">유니버스카드로 유니버스에서의 추억을 간직해주세요.</p>
+		<div id="sample" class="card">
+			<div class="card-bg">
+				<div class="card-inner">
+					<img id="logo" src={logo} alt="logo">
+					<img id="background" src={portrait} alt="face">
+					<div id="name">Kim Sunrin</div>
+					<div id="job">Developer</div>
+					<img id="barcode" src={barcode} alt="barcode">
+					<div id="date">2023.09.15</div>
+				</div>
 			</div>
+			<div class="card-border" />
 		</div>
-		<div class="card-border" />
 	</div>
+	
 
 	<a href="card/making" class="btn">
 		<div class="btn-bg" />
@@ -40,6 +43,15 @@
 	#card {
 		height: 100%;
 		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.inner {
+		top: 114px;
+		position: fixed;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -66,6 +78,9 @@
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-template-rows: auto;
+		margin-top: 20px;
+		position: fixed;
+		top: 950px;
 	}
 
 	.btn-bg {
