@@ -1,21 +1,23 @@
 <script>
-	import uni1 from "$lib/assets/home/universe_qwerty.png";
-	import uni2 from "$lib/assets/home/universe_moto.png";
-    import arrow from "$lib/assets/arrow.svg";
+	import uni1 from '$lib/assets/home/universe_qwerty.png';
+	import uni2 from '$lib/assets/home/universe_moto.png';
+	import arrow from '$lib/assets/arrow.svg';
 </script>
 
+<!--home-->
 <div id="home">
 	<img class="img1" src={uni1} alt="" />
 	<img class="img2" src={uni2} alt="" />
 
-    <a class="arrow" href="/planet">
-        <img src={arrow} alt="">
-    </a>
+	<a class="arrow" href="/">
+		<img src={arrow} alt="" />
+	</a>
 </div>
 
 <style scoped>
+	/*home page*/
 	#home {
-		height: 100%;
+		height: 100vh;
 		width: 100%;
 		display: flex;
 		flex-direction: column;
@@ -23,22 +25,37 @@
 		justify-content: center;
 	}
 
-    .img1 {
-        height: 7.25rem;
-    }
+	.img1 {
+		height: 7rem;
+	}
 
-    .img2 {
-        height: 14.3125rem;
-    }
+	.img2 {
+		height: 14rem;
+	}
 
-    .arrow {
-        position: fixed;
-        bottom: 2rem;
-        transition: 300ms;
-    }
+	.arrow {
+		position: absolute;
+		bottom: 2rem;
+		transition: 300ms;
+		background: none;
+		border: none;
+		cursor: pointer;
+	}
 
-    .arrow:hover {
-        bottom: 1rem;
+	.arrow:hover {
+		bottom: 1rem;
 		padding-top: 1rem;
-    }
+	}
+
+	/*planet page*/
+	#planet {
+		height: 100vh;
+		width: 100%;
+	}
+
+	/*list page*/
+	#list {
+		height: 100vh;
+		width: 100%;
+	}
 </style>

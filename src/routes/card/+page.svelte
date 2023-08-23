@@ -1,7 +1,7 @@
 <script>
-	import text from "$lib/assets/card/myIDCardText.svg";
-	import card from "$lib/assets/card/IDCardSample.svg";
-	import bg4 from "$lib/assets/background4.png";
+	import text from '$lib/assets/card/myIDCardText.svg';
+	import card from '$lib/assets/card/IDCardSample.svg';
+	import bg4 from '$lib/assets/background4.png';
 </script>
 
 <div id="card" style="background-image: url({bg4});">

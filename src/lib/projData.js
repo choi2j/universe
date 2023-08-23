@@ -3,6 +3,7 @@ let data = [
         title: "",
         desc: "",
         src: "",
+        tags: "",
         team: {
             dir: "",
             dev: "",
@@ -13,6 +14,7 @@ let data = [
         title: "",
         desc: "",
         src: "",
+        tags: "",
         team: {
             dir: "",
             dev: "",
@@ -23,6 +25,7 @@ let data = [
         title: "",
         desc: "",
         src: "",
+        tags: "",
         team: {
             dir: "",
             dev: "",
@@ -33,6 +36,7 @@ let data = [
         title: "",
         desc: "",
         src: "",
+        tags: "",
         team: {
             dir: "",
             dev: "",
@@ -43,6 +47,7 @@ let data = [
         title: "",
         desc: "",
         src: "",
+        tags: "",
         team: {
             dir: "",
             dev: "",
