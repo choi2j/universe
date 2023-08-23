@@ -5,6 +5,7 @@
 	export let desc;
 	export let src;
 	export let team;
+	console.log(team);
 </script>
 
 <div class="proj">

@@ -174,7 +174,7 @@
                     <div id="name">{name}</div>
                     <div id="job">{job}</div>
                     <img id="barcode" src={barcode} alt="barcode">
-                    <div id="date">2023.09.05</div>
+                    <div id="date">2023.09.15</div>
                 </div>
             </div>
             <div class="card-border" />
@@ -275,9 +275,12 @@
     }
 
     .btn {
+        position: fixed;
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-template-rows: auto;
+        margin-top: 20px;
+        top: 950px;
 	}
 
 	.btn-bg {
@@ -469,4 +472,6 @@
     .inp-div {
         margin-bottom: 12px;
     }
+
+    
 </style>

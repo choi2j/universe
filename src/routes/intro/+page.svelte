@@ -9,6 +9,7 @@
 </script>
 
 <div id="page">
+<<<<<<< HEAD
 	<img src={logo} alt="logo" id="logo" />
 	<p id="introduce">
 		유니버스는 웹 개발 동아리 QWERTY의 2023년 동아리 전시회에요.<br />
@@ -47,6 +48,39 @@
 		</div>
 	</div>
 	<img id="qwertyLogo" src={qwertyLogo} alt="qwerty" />
+=======
+    <img src={logo} alt="logo" id="logo">
+    <p id="introduce">
+        유니버스는 웹 개발 동아리 QWERTY의 2023년 동아리 전시회에요.<br>
+        유니버스 모드에선 실제 우주의 행성을 방문하는것 처럼 만들었어요.<br>
+        QWERTY의 부원들이 방학동안 열심히 준비한 웹 페이지를<br>
+        유니버스만의 아름다운 우주속에서 관람해주세요.
+    </p>
+    <img src={info} alt="How to travel Universe" id="info">
+    <div id="temp1">
+        <div class="temp2">
+            <img src={iconA} alt="soundIcon">
+            <p class="rule">웹사이트 구경하기</p>
+            <p class="desc">실제로 우주를 탐험하듯이 유니버스를 관람해주세요. 각 웹사이트마다 특별한 이벤트가 준비되어 있답니다.</p>
+        </div>
+        <div class="temp2">
+            <img src={iconB} alt="rocketIcon">
+            <p class="rule">유니버스 카드 만들기</p>
+            <p class="desc">유니버스 카드를 만들어 유니버스에서의 추억을 간직해주세요.</p> <!--카드 데이터 DB에 저장-->
+        </div>
+        <div class="temp2">
+            <img src={iconC} alt="penIcon">
+            <p class="rule">방명록 적기</p>
+            <p class="desc">행성에 자신이 왔다는 흔적을 남겨주세요. 처음으로 발을 딛은 사람은 누굴까요?</p> <!--방명록 데이터 DB에 저장-->
+        </div>
+        <div class="temp2">
+            <img src={iconD} alt="flagIcon">
+            <p class="rule">깃발 꽂아 흔적 남기기</p>
+            <p class="desc">이 행성에 맘에 들었다면 깃발을 꽂아주세요.<br>깃발을 꽂아 인상적인 행성을 알려주세요.</p> <!--깃발 개수 DB에 저장-->
+        </div>
+    </div>
+    <img id="qwertyLogo" src={qwertyLogo} alt="qwerty">
+>>>>>>> c8d03633c02f5fd9f3321382915a0097cd963c0f
 </div>
 
 <style>
@@ -106,6 +140,7 @@
 		font-size: 18px;
 	}
 
+<<<<<<< HEAD
 	#qwertyLogo {
 		width: 116px;
 	}
@@ -114,3 +149,9 @@
 		display: none;
 	}
 </style>
+=======
+    #qwertyLogo {
+        width: 116px;
+    }
+</style>
+>>>>>>> c8d03633c02f5fd9f3321382915a0097cd963c0f
