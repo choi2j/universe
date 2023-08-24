@@ -1,9 +1,4 @@
 <script>
-<<<<<<< HEAD
-	import text from '$lib/assets/card/myIDCardText.svg';
-	import card from '$lib/assets/card/IDCardSample.svg';
-	import bg4 from '$lib/assets/background4.png';
-=======
 	import text from "$lib/assets/card/myIDCardText.svg";
 	import card from "$lib/assets/card/IDCardSample.svg";
 	import bg4 from "$lib/assets/background4.png";
@@ -11,7 +6,6 @@
 	import logo from "$lib/assets/universe_logo.svg";
     import barcode from "$lib/assets/card/card_barcode.svg";
 	import portrait from "$lib/assets/portraits/portrait00.svg";
->>>>>>> c8d03633c02f5fd9f3321382915a0097cd963c0f
 </script>
 
 <div id="card" style="background-image: url({bg4});">
