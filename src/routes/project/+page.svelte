@@ -1,4 +1,6 @@
 <script>
+// @ts-nocheck
+
     import leftArrow from "$lib/assets/leftarrow.svg";
     import rightArrow from "$lib/assets/rightarrow.svg";
     import planetA from "$lib/assets/project/planetA_1.svg";
@@ -20,11 +22,13 @@
         <div id="rightArrow"></div>
     </div>
 
-    <Proj title={data[state].title} desc={data[state].desc} src={data[state].src} team={data[state].team}/>
+    <Proj title={data[state].title} desc={data[state].desc} src={data[state].src} team={data[state].team} />
 </div>
 
 <style>
     #planet {
         display: flex;
+        height: 100%;
+        width: 100%;
     }
 </style>
