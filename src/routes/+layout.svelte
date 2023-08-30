@@ -15,9 +15,3 @@
 	<Header />
 	<slot />
 </main>
-
-<style>
-	main {
-		overflow: hidden;
-	}
-</style>

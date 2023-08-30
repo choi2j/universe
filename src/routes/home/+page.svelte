@@ -9,7 +9,7 @@
 	<img class="img1" src={uni1} alt="" />
 	<img class="img2" src={uni2} alt="" />
 
-	<a class="arrow" href="/">
+	<a class="arrow" href="/planet">
 		<img src={arrow} alt="" />
 	</a>
 </div>
