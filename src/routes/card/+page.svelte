@@ -6,6 +6,7 @@
 	import logo from '$lib/assets/universe_logo.svg';
 	import barcode from '$lib/assets/card/card_barcode.svg';
 	import portrait from '$lib/assets/portraits/portrait00.svg';
+	import qrcode from '$lib/assets/card/qrcode.svg';
 </script>
 
 <div id="card" style="background-image: url({bg4});">
@@ -16,12 +17,12 @@
 			<div id="sample" class="card">
 				<div class="card-bg">
 					<div class="card-inner">
-						<img id="logo" src={logo} alt="logo" />
-						<img id="background" src={portrait} alt="face" />
-						<div id="name">Kim Sunrin</div>
-						<div id="job">Developer</div>
-						<img id="barcode" src={barcode} alt="barcode" />
-						<div id="date">2023.09.15</div>
+						<img class="logo" src={logo} alt="logo" />
+						<img class="background" src={portrait} alt="face" />
+						<div class="name">Kim Sunrin</div>
+						<div class="job">Developer</div>
+						<img class="barcode" src={barcode} alt="barcode" />
+						<div class="date">2023.09.15</div>
 					</div>
 				</div>
 				<div class="card-border" />
@@ -30,12 +31,9 @@
 			<div id="sample" class="cardQR">
 				<div class="card-bg">
 					<div class="card-inner">
-						<img id="logo" src={logo} alt="logo" />
-						<img id="background" src={portrait} alt="face" />
-						<div id="name">Kim Sunrin</div>
-						<div id="job">Developer</div>
-						<img id="barcode" src={barcode} alt="barcode" />
-						<div id="date">2023.09.15</div>
+						<img class="logo" src={logo} alt="logo" />
+						<img class="background qrBack" src={qrcode} alt="face" />
+						<p class="qrText">Certified by QWERTY.</p>
 					</div>
 				</div>
 				<div class="card-border" />
@@ -183,28 +181,29 @@
 		justify-content: center;
 	}
 
-	#logo {
+	.logo {
 		width: 227px;
+		margin-bottom: 1.75rem;
 	}
 
-	#background {
+	.background {
 		width: 180px;
-		margin: 28px 0;
+		margin-bottom: 1.75rem;
 	}
 
-	#name {
+	.name {
 		font-size: 32px;
 		margin-bottom: 12px;
 		font-weight: 600;
 	}
 
-	#job {
+	.job {
 		font-size: 16px;
 		margin-bottom: 30px;
 		font-weight: 600;
 	}
 
-	#date {
+	.date {
 		font-size: 24px;
 		margin-top: 35px;
 	}
@@ -296,5 +295,13 @@
 			opacity: 0;
 			display: none;
 		}
+	}
+
+	.qrBack {
+		margin-bottom: 13.75rem;
+	}
+
+	.qrText {
+		font-size: 0.75rem;
 	}
 </style>

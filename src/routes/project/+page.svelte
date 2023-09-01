@@ -6,7 +6,7 @@
 	import Proj from "../../components/Proj.svelte";
 
     import data from "$lib/projData";
-    $: state = 0;
+    $: state = 1;
     $: show = 0;
 
     function toggleProj() {
@@ -23,6 +23,11 @@
         collateralTarget = 0;
 
     }
+
+    function changeState() {
+        if (state == 4) state = 0;
+        else state++;
+    }
 </script>
 
 <div id="planet">
@@ -37,7 +42,7 @@
     <div id="comp">
         <Proj title={data[state].title} desc={data[state].desc} src={data[state].src} team={data[state].team} />
     </div>
-    
+    <button class="tempButton" on:click={() => {changeState()}}>asdfasdf</button>
 </div>
 
 <style>
@@ -65,6 +70,16 @@
 		border: none;
 		background: none;
 	}
+    
+    .tempButton {
+        height: 100px;
+        width: 100px;
+        background-color: aliceblue;
+        z-index: 2;
+        position: fixed;
+        top: 50px;
+        left: 50px;
+    }
 </style>
 
 

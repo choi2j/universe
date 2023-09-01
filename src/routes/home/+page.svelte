@@ -6,7 +6,7 @@
 
 <!--home-->
 <div id="home">
-	<img class="img1" src={uni1} alt="" />
+	<!-- <img class="img1" src={uni1} alt="" /> -->
 	<img class="img2" src={uni2} alt="" />
 
 	<a class="arrow" href="/planet">
@@ -25,12 +25,9 @@
 		justify-content: center;
 	}
 
-	.img1 {
-		height: 7rem;
-	}
-
 	.img2 {
-		height: 14rem;
+		height: 21.6rem;
+		width: 43.5rem;
 	}
 
 	.arrow {

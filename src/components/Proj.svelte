@@ -5,7 +5,6 @@
 	export let desc;
 	export let src;
 	export let team;
-	import circ from "$lib/assets/props/whiteCircle.svg";
 	import leftArrow from "$lib/assets/leftarrow.svg";
 	import flag from "$lib/assets/project/flag.svg";
 	import icon1 from "$lib/assets/project/icon1.svg";
@@ -25,7 +24,7 @@
 			<div class="f5411">
 				{#each team as a}
 					<div class="part">
-						<img src={circ} alt="circle">
+						<img src={a.pf_path} alt="circle" class="profile">
 						<p class="cont">{a.role} by {a.name}</p>
 					</div>
 				{/each}
@@ -165,5 +164,7 @@
 		font-size: 1.75rem;
 	}
 
-
+	.profile {
+		height: 2.625rem;
+	}
 </style>
