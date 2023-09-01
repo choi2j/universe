@@ -46,7 +46,7 @@ let data = [
         src: "src\\lib\\assets\\project\\icon5.svg",
         team: [
             {role:"Directed", name:"안승일", pf_path: "src\\lib\\assets\\profiles\\seungilAhn.png"},
-            {role:"Developed", name:"박선후", pf_path: "src\\lib\\assets\\props\\whiteCircle.svg"},
+            {role:"Developed", name:"박선후", pf_path: "src\\lib\\assets\\profiles\\seonhooPark.png"},
             {role:"Designed", name:"박건희", pf_path: "src\\lib\\assets\\props\\whiteCircle.svg"},
         ]
     },
