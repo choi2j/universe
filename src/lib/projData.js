@@ -6,7 +6,7 @@ let data = [
         team: [
             {role:"Directed", name:"최재원", pf_path: "src\\lib\\assets\\profiles\\jaewonChoi.png"},
 
-            {role:"Developed", name:"김정우", pf_path: "src\\lib\\assets\\props\\whiteCircle.svg"},
+            {role:"Developed", name:"김정우", pf_path: "src\\lib\\assets\\profiles\\jeongwooKim.png"},
             {role:"Designed", name:"Jimin", pf_path: "src\\lib\\assets\\profiles\\jiminKim.png"},
         ]
     },
@@ -16,8 +16,8 @@ let data = [
         src: "src\\lib\\assets\\project\\icon2.svg",
         team: [
             {role:"Directed", name:"이여원", pf_path: "src\\lib\\assets\\profiles\\yeowonLee.png"},
-            {role:"Developed", name:"이건", pf_path: "src\\lib\\assets\\props\\whiteCircle.svg"},
-            {role:"Developed", name:"한태규", pf_path: "src\\lib\\assets\\props\\whiteCircle.svg"},
+            {role:"Developed", name:"이건", pf_path: "src\\lib\\assets\\profiles\\geonLee.png"},
+            {role:"Developed", name:"한태규", pf_path: "src\\lib\\assets\\profiles\\taekyuHan.png"},
         ]
     },
     {
@@ -27,7 +27,7 @@ let data = [
         team: [
             {role:"Directed", name:"김윤서", pf_path: "src\\lib\\assets\\profiles\\yoonseoKim.png"},
             {role:"Developed", name:"박신영", pf_path: "src\\lib\\assets\\profiles\\sinyeongPark.png"},
-            {role:"Developed", name:"심현수", pf_path: "src\\lib\\assets\\props\\whiteCircle.svg"},
+            {role:"Developed", name:"심현수", pf_path: "src\\lib\\assets\\profiles\\hyeonsooSim.png"},
         ]
     },
     {
@@ -47,7 +47,7 @@ let data = [
         team: [
             {role:"Directed", name:"안승일", pf_path: "src\\lib\\assets\\profiles\\seungilAhn.png"},
             {role:"Developed", name:"박선후", pf_path: "src\\lib\\assets\\profiles\\seonhooPark.png"},
-            {role:"Designed", name:"박건희", pf_path: "src\\lib\\assets\\props\\whiteCircle.svg"},
+            {role:"Designed", name:"박건희", pf_path: "src\\lib\\assets\\profiles\\default.png"},
         ]
     },
 ]

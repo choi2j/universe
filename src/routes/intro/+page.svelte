@@ -31,9 +31,9 @@
 		</div>
 		<div class="temp2">
 			<img src={iconC} alt="penIcon" />
-			<p class="rule">방명록 적기</p>
+			<p class="rule">포토존 촬영하기</p>
 			<p class="desc">
-				행성에 자신이 왔다는 흔적을 남겨주세요. 처음으로 발을 딛은 사람은 누굴까요?
+				아름다운 우주에서 사진을 찍어보세요. 포토존에서 유니버스 특별 쿼티네컷이 준비돼 있어요.
 			</p>
 			<!--방명록 데이터 DB에 저장-->
 		</div>

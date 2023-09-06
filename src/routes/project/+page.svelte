@@ -5,11 +5,11 @@
     import rightArrow from "$lib/assets/rightarrow.svg";
 	import Proj from "../../components/Proj.svelte";
 
-    import data from "$lib/projData";
+    import projData from "$lib/projData";
     $: state = 1;
     $: show = 0;
 
-    function toggleProj() {
+    function toggleProj() {  //wip
         // let target = document.querySelector('.comp');
         // let collateralTarget = document.querySelector('.back');
 
@@ -28,6 +28,9 @@
         if (state == 4) state = 0;
         else state++;
     }
+
+    export let data;
+    console.log(data);
 </script>
 
 <div id="planet">
@@ -40,7 +43,7 @@
         <div id="rightArrow"></div>
     </div>
     <div id="comp">
-        <Proj title={data[state].title} desc={data[state].desc} src={data[state].src} team={data[state].team} />
+        <Proj title={projData[state].title} desc={projData[state].desc} src={projData[state].src} team={projData[state].team} />
     </div>
     <button class="tempButton" on:click={() => {changeState()}}>asdfasdf</button>
 </div>

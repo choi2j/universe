@@ -12,7 +12,8 @@
 	import icon3 from "$lib/assets/project/icon3.svg";
 	import icon4 from "$lib/assets/project/icon4.svg";
 	import icon5 from "$lib/assets/project/icon5.svg";
-	console.log(team);
+	import { supabase } from "$lib/supabaseClient";
+	export let data;
 </script>
 
 <div class="proj">
@@ -41,7 +42,7 @@
             <div class="btn-border" />
             <div class="btn-text">확인해보기</div>
         </a>
-        <button>
+        <button on:click={() => {addFlag()}}>
             <img src={flag} alt="flag">
         </button>
     </div>

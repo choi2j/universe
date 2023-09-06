@@ -6,7 +6,7 @@
 	import logo from '$lib/assets/universe_logo.svg';
 	import barcode from '$lib/assets/card/card_barcode.svg';
 	import portrait from '$lib/assets/portraits/portrait00.svg';
-	import qrcode from '$lib/assets/card/qrcode.svg';
+	import qrcode from '$lib/assets/card/qrcode2.svg';
 </script>
 
 <div id="card" style="background-image: url({bg4});">
