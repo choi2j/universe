@@ -1,116 +1,150 @@
 <script>
-	import logo from '$lib/assets/home/universe_moto.png';
-	import info from '$lib/assets/howToTravelUniversum.svg';
-	import qwertyLogo from '$lib/assets/home/universe_qwerty.png';
-	import iconA from '$lib/assets/intro/a.svg';
-	import iconB from '$lib/assets/intro/b.svg';
-	import iconC from '$lib/assets/intro/c.svg';
-	import iconD from '$lib/assets/intro/d.svg';
+	import '$lib/style.css';
+	import Header from '../../components/Header.svelte';
+
+	import moto from '$lib/assets/home/universe_moto.png';
+	import httu from '$lib/assets/howToTravelUniversum.svg';
+
+	import screen from '$lib/assets/intro/a.svg';
+	import rocket from '$lib/assets/intro/b.svg';
+	import pen from '$lib/assets/intro/c.svg';
+	import flag from '$lib/assets/intro/d.svg';
+
+	import logo from '$lib/assets/home/universe_qwerty.png';
+
+	import bg from '$lib/assets/background5.png';
 </script>
 
-<div id="page">
-	<img src={logo} alt="logo" id="logo" />
-	<p id="introduce">
+<Header />
+<div class="background"/>
+
+<div id="intro" style={`background-image: url(${bg})`}>
+	<img src={moto} alt="moto" class="moto" />
+	<p class="text">
 		유니버스는 웹 개발 동아리 QWERTY의 2023년 동아리 전시회에요.<br />
 		유니버스 모드에선 실제 우주의 행성을 방문하는것 처럼 만들었어요.<br />
 		QWERTY의 부원들이 방학동안 열심히 준비한 웹 페이지를<br />
-		유니버스만의 아름다운 우주속에서 관람해주세요.
+		유니버스만의 아름다운 우주속에서 관람해주세요.<br />
 	</p>
-	<img src={info} alt="How to travel Universe" id="info" />
-	<div id="temp1">
-		<div class="temp2">
-			<img src={iconA} alt="soundIcon" />
-			<p class="rule">웹사이트 구경하기</p>
-			<p class="desc">실제로 우주를 탐험하듯이 유니버스를 관람해주세요. 각 웹사이트마다 특별한 이벤트가 준비되어 있답니다.</p>
+	<img src={httu} alt="httu" class="httu" />
+	<div class="rules">
+		<div class="rule">
+			<img src={screen} alt="screen" class="icon" />
+			<p class="title">웹사이트 구경하기</p>
+			<p class="desc">
+				실제로 우주를 탐험하듯이 유니버스를 관람해주세요. 각 웹사이트마다 특별한 이벤트가 준비되어
+				있답니다.
+			</p>
 		</div>
-		<div class="temp2">
-			<img src={iconB} alt="rocketIcon" />
-			<p class="rule">유니버스 카드 만들기</p>
+
+		<div class="rule">
+			<img src={rocket} alt="rocket" class="icon" />
+			<p class="title">유니버스 카드 만들기</p>
 			<p class="desc">유니버스 카드를 만들어 유니버스에서의 추억을 간직해주세요.</p>
-			<!--카드 데이터 DB에 저장-->
 		</div>
+<<<<<<< HEAD
 		<div class="temp2">
 			<img src={iconC} alt="penIcon" />
 			<p class="rule">포토존 촬영하기</p>
+=======
+
+		<div class="rule">
+			<img src={pen} alt="pen" class="icon" />
+			<p class="title">포토존 촬영하기</p>
+>>>>>>> 6159552ea6e9836f9134b6d55b4fff15f56d4a02
 			<p class="desc">
 				아름다운 우주에서 사진을 찍어보세요. 포토존에서 유니버스 특별 쿼티네컷이 준비돼 있어요.
 			</p>
-			<!--방명록 데이터 DB에 저장-->
 		</div>
-		<div class="temp2">
-			<img src={iconD} alt="flagIcon" />
-			<p class="rule">깃발 꽂아 흔적 남기기</p>
+
+		<div class="rule">
+			<img src={flag} alt="flag" class="icon" />
+			<p class="title">깃발 꽂아 흔적 남기기</p>
 			<p class="desc">
-				이 행성에 맘에 들었다면 깃발을 꽂아주세요.<br />깃발을 꽂아 인상적인 행성을 알려주세요.
+				이 행성에 맘에 들었다면 깃발을 꽂아주세요. 깃발을 꽂아 인상적인 행성을 알려주세요.
 			</p>
-			<!--깃발 개수 DB에 저장-->
 		</div>
 	</div>
-	<img id="qwertyLogo" src={qwertyLogo} alt="qwerty" />
+
+	<img src={logo} alt="logo" class="logo" />
 </div>
 
-<style>
-	#page {
+<style scoped>
+	.background {
+		height: 100vh;
+		width: 100%;
+		position: fixed;
+		z-index: -10;
+		background: #070813;
+	}
+
+	/* Intro */
+	#intro {
+		height: fit-content;
+		width: 100%;
+		background-repeat: no-repeat;
+		background-size: cover;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		overflow-y: scroll;
-		padding: 100px 0;
+		gap: 10rem;
+		padding: 5rem;
 	}
 
-	#logo {
-		width: 695px;
-		margin-bottom: 120px;
+	.moto {
+		height: 15rem;
+		width: fit-content;
 	}
 
-	#introduce {
-		font-size: 1.5rem;
-		color: white;
+	.text {
+		font-size: 1.3rem;
+		font-weight: 500;
 		text-align: center;
-		margin-bottom: 120px;
+		color: #fff;
 	}
 
-	#info {
-		width: 867px;
-		margin-bottom: 120px;
-		line-height: 200%;
+	.httu {
+		height: 5rem;
 	}
 
-	#temp1 {
-		margin-bottom: 48px;
-		width: 824px;
-		height: 744px;
+	.rules {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr 1fr;
-	}
-
-	.temp2 {
-		width: 388px;
-		height: 348px;
-		background: rgba(255, 255, 255, 0.2);
-		backdrop-filter: blur(12px);
-		border-radius: 48px;
-		color: white;
-		padding: 46px 24px 0 24px;
-		margin: 12px;
+		gap: 2rem;
 	}
 
 	.rule {
-		font-size: 32px;
-		font-weight: 600;
-		margin: 24px 0;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 4rem 2rem;
+		border-radius: 3rem;
+		background: #ffffff33;
+		backdrop-filter: blur(1rem);
+		aspect-ratio: 1/1;
+		max-width: 28rem;
+		gap: 1rem;
+	}
+
+	.icon {
+		height: 8rem;
+	}
+
+	.title {
+		font-size: 2rem;
+		font-weight: 700;
+		color: #fff;
 	}
 
 	.desc {
-		font-size: 18px;
+		font-size: 1.2rem;
+		font-weight: 400;
+		color: #fff;
+		word-break: keep-all;
 	}
 
-	#qwertyLogo {
-		width: 116px;
-	}
-
-	#text {
-		display: none;
+	.logo {
+		height: 5rem;
 	}
 </style>

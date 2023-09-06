@@ -1,5 +1,5 @@
 {
-	"name": "qwerty-universe",
+	"name": "qwerty-universe-01",
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
@@ -24,9 +24,13 @@
 		"typescript": "^5.0.0",
 		"vite": "^4.4.2"
 	},
+<<<<<<< HEAD
 	"type": "module",
 	"dependencies": {
 		"@supabase/supabase-js": "^2.31.0",
 		"qrcode": "^1.5.3"
 	}
+=======
+	"type": "module"
+>>>>>>> 6159552ea6e9836f9134b6d55b4fff15f56d4a02
 }
