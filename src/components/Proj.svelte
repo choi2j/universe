@@ -13,6 +13,8 @@
 	import icon3 from "$lib/assets/project/icon3.svg";
 	import icon4 from "$lib/assets/project/icon4.svg";
 	import icon5 from "$lib/assets/project/icon5.svg";
+
+	export let display;
 	console.log(team);
 </script>
 
@@ -37,6 +39,9 @@
 	</div>
 
 	<div class="f5426">
+        <button on:click={() => {display = 0}}>
+            <img src={leftArrow} alt="flag">
+        </button>
         <a href="만든 프로젝트 링크" class="btn">
             <div class="btn-bg" />
             <div class="btn-border" />
@@ -126,6 +131,8 @@
 		top: 59.5em;
 		gap: 1rem;
 		width: 100%;
+		background: rgba(0, 0, 0, 0.60);
+		backdrop-filter: blur(100px);
     }
 
 	.btn {
